@@ -149,6 +149,12 @@ namespace WpfApp1
                     UpdateText(line , color, false);
                     return 4;
                 }
+                if (line.Contains("java.lang.NullPointerException"))
+                {
+                    UpdateText("空指针问题: ", colorRed, false);
+                    UpdateText(line , color, false);
+                    return 5;
+                }
             }
             return outNum >1 ? --outNum:0;
         }
