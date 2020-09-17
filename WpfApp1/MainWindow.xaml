@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="713.115" Width="1042.213">
+    <Grid HorizontalAlignment="Left" Margin="10,10,0,14.656" Width="1012.377">
+        <Button x:Name="selectFile" Content="文件选择" HorizontalAlignment="Left" Margin="10,30.141,0,0" VerticalAlignment="Top" Width="75" Height="30" Click="selectFile_Click" RenderTransformOrigin="-7.075,-1.079"/>
+        <Label x:Name="label1" Content="日志文件位置:" HorizontalAlignment="Left" Margin="90,31.141,0,0" VerticalAlignment="Top" Height="30" MaxWidth="450" RenderTransformOrigin="0.478,0.398"/>
+        <TextBox x:Name="filePath" HorizontalAlignment="Left" Height="69.344" Margin="186,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="816.377" VerticalContentAlignment="Center" IsEnabled="False"/>
+        <RichTextBox x:Name="richText" Height="488.123" Margin="0,113,0,0" Width="1002.377" VerticalScrollBarVisibility="Visible" VerticalContentAlignment="Center" Block.LineHeight="6" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <FlowDocument/>
+        </RichTextBox>
+        <StatusBar x:Name="butombar" HorizontalAlignment="Left" Margin="0,0,0,1.204" Width="1002.377" VerticalAlignment="Bottom" Height="41.557">
+            <Label Content="@Author:Zhangyiyang "/>
+            <Label Content="@Version:0.0.0.1Beta" RenderTransformOrigin="1.465,0.547"/>
+        </StatusBar>
+    </Grid>
+</Window>
